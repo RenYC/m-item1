@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页-订单</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/slick.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <script src="../../js/jqeruy-min-3.3.1.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/index.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="head">
+        <span class="btn-back f-fl"><i></i>返回</span> 订单
+    </div>
+
+    <div class="order">
+        <div class="order-title f-clear">
+            <div class="f-fl order-item active">提现</div>
+            <div class="f-fl order-item">理财</div>
+            <div class="f-fl order-item">已完成</div>
+        </div>
+        <ul class="order-list" style="display:block;">
+            <li class="">
+                <a href="javascript:;">
+                    <div class="f-clear top">
+                        <div class="f-fl">提现金额：<span>5000</span></div>
+                        <div class=" f-fl">时间：2018/10/08 00:24:01</div>
+                    </div>
+                    <div class="f-clear">
+                        <div class=" f-fl ">状态：<span>未匹配</span></div>
+
+                    </div>
+                </a>
+            </li>
+            <li class=" ">
+                <a href="javascript:;">
+                    <div class="f-clear top ">
+                        <div class="f-fl ">提现金额：<span>5000</span></div>
+                        <div class=" f-fl ">时间：2018/10/08 00:24:01</div>
+                    </div>
+                    <div>
+                        <div class=" f-fl ">状态：<span>未匹配</span></div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul class="order-list ">
+            <li class=" ">
+                <div class="f-clear top ">
+                    <div class="f-fl ">提现金额：<span>5000</span></div>
+                    <div class=" f-fl ">时间：2018/10/08 00:24:01</div>
+                </div>
+                <div>
+                    <div class=" f-fl ">状态：<span>打款确认中</span></div>
+                    <div class=" f-fl ">
+                        <a href="orderItem1.html ">点击查看详情>></a>
+                    </div>
+                </div>
+            </li>
+            <li class=" ">
+                <div class="f-clear top ">
+                    <div class="f-fl ">提现金额：<span>5000</span></div>
+                    <div class=" f-fl ">时间：2018/10/08 00:24:01</div>
+                </div>
+                <div>
+                    <div class=" f-fl ">状态：<span>打款确认中</span></div>
+                    <div class=" f-fl ">
+                        <a href="orderItem1.html ">点击查看详情>></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="order-list ">
+            <li class=" ">
+                <div class="f-clear top ">
+                    <div class="f-fl ">提现金额：<span>5000</span></div>
+                    <div class=" f-fl ">时间：2018/10/08 00:24:01</div>
+                </div>
+                <div>
+                    <div class=" f-fl ">状态：<span>已打款确认</span></div>
+                    <div class=" f-fl ">
+                        <a href="orderItem2.html">点击查看详情>></a>
+                    </div>
+                </div>
+            </li>
+            <li class=" ">
+                <div class="f-clear top ">
+                    <div class="f-fl ">提现金额：<span>5000</span></div>
+                    <div class=" f-fl ">时间：2018/10/08 00:24:01</div>
+                </div>
+                <div>
+                    <div class=" f-fl ">状态：<span>已打款确认</span></div>
+                    <div class=" f-fl ">
+                        <a href="orderItem2.html">点击查看详情>></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 底部菜单 -->
+    <div class="footer ">
+        <div class="item icon-index ">
+            <a href="../../index.html ">
+                <i></i>
+                <p>首页</p>
+            </a>
+        </div>
+        <div class="item icon-dd ac ">
+            <a href="./views/order/order.html ">
+                <i></i>
+                <p>订单</p>
+            </a>
+        </div>
+        <div class="item icon-gg ">
+            <a href="# ">
+                <i></i>
+                <p>通知</p>
+            </a>
+        </div>
+        <div class="item icon-wd ">
+            <a href="# ">
+                <i></i>
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        $('.order-item').on('click', function() {
+            var index = $(this).index();
+            $('.order-item').removeClass('active');
+            $(this).addClass('active');
+            $('.order-list').css('display', 'none');
+            $('.order-list').eq(index).css('display', 'block');
+        })
+    </script>
+
+</body>
+
+</html>
