@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jqeruy-min-3.3.1.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <h1>理财交易</h1>
+    </div>
+    <!-- 轮播 -->
+    <div class="banner slick">
+        <div class="item">
+            <a href="javascript:;"><img src="./img/bar1.png" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="javascript:;"><img src="./img/bar1.png" alt=""></a>
+        </div>
+        <div class="item">
+            <a href="javascript:;"><img src="./img/bar1.png" alt=""></a>
+        </div>
+    </div>
+
+    <!--公告-->
+    <div class=" wrap">
+        <div class="infoList txtScroll-top">
+            <div>
+                <a href="#">
+                    <i></i>您可以使用 HTML 的 标签引用它：
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <i></i>使用 HTML 的 标签引用它
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 跳转链接 -->
+    <div class="wrap">
+        <ul class="card-link">
+            <li>
+                <a href="#">
+                    <img src="./img/icon-jtqb.png" alt="">
+                    <p>静态钱包</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/icon-dtqb.png" alt="">
+                    <p>动态钱包</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/icon-lsqb.png" alt="">
+                    <p>临时钱包</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/icon-tzgg.png" alt="">
+                    <p>通知公共</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/icon-gmzzb.png" alt="">
+                    <p>购买增值币</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/icon-tglj.png" alt="">
+                    <p>推广链接</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+    <!-- 帮助中心 -->
+    <div class="wrap">
+        <div class="help">
+            <div class="title">
+                <h2>帮助中心</h2>
+                <div></div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#"><img src="./img/icon-lc.png" alt=""> 理财</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/icon-tx.png" alt=""> 体现</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 底部菜单 -->
+    <div class="footer">
+        <div class="item icon-index ac">
+            <a href="#">
+                <i></i>
+                <p>首页</p>
+            </a>
+        </div>
+        <div class="item icon-dd">
+            <a href="#">
+                <i></i>
+                <p>订单</p>
+            </a>
+        </div>
+        <div class="item icon-gg">
+            <a href="#">
+                <i></i>
+                <p>通知</p>
+            </a>
+        </div>
+        <div class="item icon-wd">
+            <a href="#">
+                <i></i>
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $('.slick').slick({
+                dots: true,
+                autoplay: true,
+                centerMode: true,
+                centerPadding: '0.75rem',
+
+            });
+            $('.infoList').slick({
+                autoplay: true,
+                vertical: true,
+                arrows: false
+
+            });
+        });
+    </script>
+</body>
+
+</html>

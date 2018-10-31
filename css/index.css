@@ -1,0 +1,263 @@
+/* 公共样式 */
+
+body {
+    padding-bottom: 0.96rem;
+}
+
+.wrap {
+    margin-top: 0.2rem;
+    padding: 0 0.3rem;
+    background-color: #fff;
+}
+
+
+/* 首页 */
+
+.header {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    background-color: #fff;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.banner {
+    height: 3.8rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.banner .item {
+    width: 100%;
+    float: left;
+}
+
+.banner .item img {
+    width: 6rem;
+    line-height: 100px;
+    padding: 2%;
+}
+
+.banner .slick-dots {
+    bottom: 0;
+}
+
+.banner .slick-dots li button:before {
+    color: #f60;
+}
+
+.slick-slider {
+    margin: 0;
+}
+
+
+/* 文字轮播 */
+
+.txtScroll-top {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 12px;
+}
+
+.txtScroll-top.infoList {
+    height: 1rem;
+}
+
+.txtScroll-top a {
+    position: relative;
+    display: inline-block;
+    width: 6.1rem;
+    text-indent: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #999;
+}
+
+.txtScroll-top a i {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0.3rem;
+    width: 0.35rem;
+    height: 0.35rem;
+    background: url("../img/icon-notice.png") no-repeat center center;
+    background-size: 100%;
+}
+
+
+/* 跳转链接 */
+
+.card-link {
+    /* display: flex; */
+    height: 3.46rem;
+    overflow: hidden;
+    /* justify-content: space-around; */
+}
+
+.card-link li {
+    width: 33.3%;
+    text-align: center;
+    float: left;
+    padding-top: .3rem;
+}
+
+.card-link li a {
+    display: inline-block;
+    font-size: 12px;
+    line-height: .6rem;
+}
+
+.card-link li img {
+    width: .6rem;
+    height: .6rem;
+}
+
+
+/* 帮助中心 */
+
+.help {
+    height: 3.24rem;
+}
+
+.help .title {
+    position: relative;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    text-align: center;
+    color: #333;
+}
+
+.help .title h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.help .title>div {
+    /* position: absolute; */
+    width: 0.3rem;
+    height: 0.04rem;
+    background-color: #fd843c;
+    margin: -0.15rem auto 0;
+}
+
+.help ul {
+    height: 2.12rem;
+    background: url(../img/help-bg.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
+.help ul li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+.help ul li a {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1rem;
+    line-height: 1rem;
+    border: 1px solid #fff;
+    border-radius: 0.2rem;
+    font-size: 12px;
+    color: #fff;
+}
+
+.help ul li a img {
+    width: 0.44rem;
+    height: 0.44rem;
+}
+
+
+/* 底部导航 */
+
+.footer {
+    width: 100%;
+    height: 0.95rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    color: #fff;
+    border-top: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+
+.footer .item {
+    float: left;
+    width: 25%;
+}
+
+.footer .item a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.footer .item a i {
+    display: block;
+    height: 0.4rem;
+    width: 0.4rem;
+    margin-top: 0.14rem;
+    /* margin: 0 auto 0.05rem; */
+}
+
+.footer .item a p {
+    height: 0.38rem;
+    line-height: 0.38rem;
+    /* color: #fff; */
+    /* font-size: 0.28rem; */
+}
+
+.footer .item.icon-index a i {
+    background: url(../img/icon-index.png) no-repeat center center;
+    background-size: auto 0.4rem;
+}
+
+.footer .item.icon-dd a i {
+    background: url(../img/icon-dd.png) no-repeat center center;
+    background-size: auto 0.4rem;
+}
+
+.footer .item.icon-gg a i {
+    background: url(../img/icon-gg.png) no-repeat center center;
+    background-size: auto 0.4rem;
+}
+
+.footer .item.icon-wd a i {
+    background: url(../img/icon-wd.png) no-repeat center center;
+    background-size: auto 0.4rem;
+}
+
+.footer .item.icon-index.ac a i {
+    background: url(../img/icon-index1.png) no-repeat center center;
+    background-size: auto 0.4rem;
+}
+
+.footer .item.icon-dd.ac a i {
+    background: url(../img/icon-dd1.png) no-repeat center center;
+    background-size: auto 0.4rem;
+}
+
+.footer .item.icon-gg.ac a i {
+    background: url(../img/icon-gg1.png) no-repeat center center;
+    background-size: auto 0.4rem;
+}
+
+.footer .item.icon-wd.ac a i {
+    background: url(../img/icon-wd1.png) no-repeat center center;
+    background-size: auto 0.4rem;
+}
+
+.footer .item.ac a {
+    color: #fd843c;
+}

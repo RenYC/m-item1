@@ -1,0 +1,183 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+fieldset,
+input,
+nav,
+aside,
+header,
+article,
+section,
+figure,
+figcaption,
+video,
+audio {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+s {
+    text-decoration: none;
+}
+
+i,
+em,
+s {
+    font-style: normal
+}
+
+fieldset,
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    /*表格中边线重叠*/
+}
+
+input,
+select,
+textarea {
+    font: 12px Microsoft YaHei;
+}
+
+:focus {
+    outline: none
+}
+
+
+/*表单中获得焦点时去蓝框*/
+
+body {
+    font-family: "Microsoft YaHei";
+    background-color: #f3f3f3;
+}
+
+
+/* Clearfix,避免因子元素浮动而导致的父元素高度缺失能问题 自适应高度 */
+
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.yellow {
+    color: #ffb452;
+}
+
+.red {
+    color: #ff4e4c;
+}
+
+.blue {
+    color: #327afe;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #666;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #666;
+}
+
+input:-ms-input-placeholder {
+    color: #666;
+}
+
+input::-webkit-input-placeholder {
+    color: #666;
+}
+
+.oneLine {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.twoLine {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.threeLine {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.fourLine {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
