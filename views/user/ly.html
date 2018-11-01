@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页-留言</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/slick.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <script src="../../js/jqeruy-min-3.3.1.js"></script>
+    <script src="../../js/slick.min.js"></script>
+    <script src="../../js/index.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="head">
+        <span class="btn-back f-fl"><i></i>返回</span> 留言
+    </div>
+
+    <div class="ly-title">
+        <a href="javascript:;" class="ac">在线留言</a>
+        <a href="javascript:;">留言记录</a>
+    </div>
+
+    <div class="ly-main">
+        <div class="ly-item1">
+            <textarea name="" id="" cols="30" rows="10">留言：</textarea>
+            <button class="btn-orange">立即提交</button>
+        </div>
+        <div class="ly-item2" style="display:none;">
+            <div class="search f-clear">
+                <input class="f-fl" type="text" value="搜索问题关键词">
+                <button class="f-fl">搜索</button>
+            </div>
+            <div class="item">
+                <p class="top f-clear">
+                    <span class="date f-fl">2018/08/09 12:32</span>
+                    <input class="f-fr" type="checkbox" name="" id="">
+                </p>
+                <div class="text">
+                    <div class="lynr">留言内容：<span>xxxxxx</span></div>
+                    <textarea name="" id="" cols="30" rows="10">留言：</textarea>
+                </div>
+            </div>
+            <div class="item">
+                <p class="top f-clear">
+                    <span class="date f-fl">2018/08/09 12:32</span>
+                    <input class="f-fr" type="checkbox" name="" id="">
+                </p>
+                <div class="text">
+                    <div class="lynr">留言内容：<span>xxxxxx</span></div>
+                    <textarea name="" id="" cols="30" rows="10">留言：</textarea>
+                </div>
+            </div>
+            <button class="btn-orange">删除选中内容</button>
+        </div>
+
+    </div>
+
+
+    <!-- 底部菜单 -->
+    <div class="footer">
+        <div class="item icon-index ">
+            <a href="#">
+                <i></i>
+                <p>首页</p>
+            </a>
+        </div>
+        <div class="item icon-dd ac">
+            <a href="#">
+                <i></i>
+                <p>订单</p>
+            </a>
+        </div>
+        <div class="item icon-gg">
+            <a href="#">
+                <i></i>
+                <p>通知</p>
+            </a>
+        </div>
+        <div class="item icon-wd">
+            <a href="#">
+                <i></i>
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        $('.ly-title a').on('click',function(){
+            var index=$(this).index();
+            $('.ly-title a').removeClass('ac');
+            $(this).addClass('ac')
+
+            $('.ly-main>div').css('display','none');
+            $('.ly-main>div').eq(index).css('display','block');
+        })
+    </script>
+
+
+</body>
+
+</html>
