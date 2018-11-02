@@ -14,11 +14,11 @@
     <script src="./js/index.js"></script>
 </head>
 
-<body>
+<body style="padding-top:0;">
     <!-- 头部 -->
-    <div class="header">
+    <!-- <div class="header">
         <h1>理财交易</h1>
-    </div>
+    </div> -->
     <!-- 轮播 -->
     <div class="banner slick">
         <div class="item">
@@ -137,19 +137,17 @@
     </div>
 
     <script>
-        $(function() {
+        $(function () {
             $('.slick').slick({
                 dots: true,
                 autoplay: true,
-                centerMode: true,
-                centerPadding: '0.75rem',
 
             });
             $('.infoList').slick({
                 autoplay: true,
                 vertical: true,
-                arrows: false
-
+                arrows: false,
+                touchMove: false
             });
         });
     </script>
