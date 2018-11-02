@@ -1,0 +1,103 @@
+/* 登录 */
+body{
+    background-color: #fff;
+}
+.logo{
+    width: 100%;
+    height: 5.6rem;
+    background: url('../img/login_bg.png') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.logo img{
+    width: 2.12rem;
+    height: 2.12rem;
+    margin-top: 1.34rem;
+}
+.login-form{
+    padding: 0 0.74rem;
+}
+.login-form .from-line{
+    height: 0.99rem;
+    line-height: 0.99rem;
+    padding-top: 0.26rem;
+    padding-left: 0.7rem;
+    border-bottom:1px solid #eeeeee;
+    font-size: 0.3rem;
+    
+}
+.login-form .from-line input{
+    width: 4.9rem;
+    height: 100%;
+    border:none;
+    color: #e4e4e4;
+}
+.login-form .from-line.user{
+    background: url('../img/login-user.png') no-repeat 0 0.38rem;
+    background-size: 0.4rem;
+}
+.login-form .from-line.pwd{
+    background: url('../img/login-pwd.png') no-repeat 0 0.38rem;
+    background-size: 0.4rem;
+}
+
+.login-btn{
+    text-align: center;
+}
+.login-btn .btn{
+    width: 4.5rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    border-radius:1rem 1rem;
+    display: inline-block;
+    font-size: 0.32rem;
+}
+.login-btn .submit{
+    color: #fff;
+    border:none;
+    background-color: #f77d4c;
+}
+.login-btn .register{
+    border:1px solid #f77d4c;
+    color: #f77d4c;
+}
+.login-other{
+    text-align: center;
+    font-size: 0.6rem;
+}
+.login-other a{
+    color: #f77d4c;
+
+}
+
+/* 注册 */
+.login-form .from-line.phone{
+    background: url('../img/login-phone.png') no-repeat 0 0.38rem;
+    background-size: 0.35rem 0.5rem;
+}
+.login-form .from-line.vCode{
+    position: relative;
+    background: url('../img/login-vCode.png') no-repeat 0 0.38rem;
+    background-size: 0.4rem;
+}
+.login-form .from-line.twoPwd{
+    background: url('../img/login-pwd.png') no-repeat 0 0.38rem;
+    background-size: 0.4rem;
+}
+.login-form .from-line.referee{
+    background: url('../img/login-referee.png') no-repeat 0 0.38rem;
+    background-size: 0.4rem;
+}
+.login-form .from-line.vCode a{
+    position: absolute;
+    right: 0;
+    top: 0.26rem;
+    display: block;
+    width: 1.2rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color: #f77d4c;
+    border:1px solid #f77d4c;
+    border-radius: 0.1rem 0.1rem;
+    text-align: center;
+}
