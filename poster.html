@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jqeruy-min-3.3.1.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+
+    <style>
+        .box {
+            width: 7.5rem;
+        }
+        
+        .box div {
+            width: 100%;
+        }
+        
+        .box div img {
+            width: 100%;
+        }
+        
+        .slick-dots {
+            bottom: -100px;
+        }
+        
+        .slick-dots .slick-active img {
+            border: 1px solid #f60;
+        }
+        
+        .slick-dots li {
+            margin: 0px 20px;
+            box-sizing: border-box;
+        }
+        
+        .slick-dots li,
+        .slick-dots li img {
+            width: 1rem;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body style="padding:0;">
+    <div class="box">
+        <div class="ac">
+            <a href="#"><img src="./poster1.png" alt=""></a>
+        </div>
+        <div>
+            <a href="#"><img src="./poster2.png" alt=""></a>
+        </div>
+        <div>
+            <a href="#"><img src="./poster3.png" alt=""></a>
+        </div>
+    </div>
+    <!-- <div class="focus">
+        <img class="ac" src="" alt="">
+    </div> -->
+
+    <script>
+        $(function() {
+            $('.box').slick({
+                dots: true,
+                arrows: false
+            });
+            $('.slick-dots li').eq(0).html('<img src="./poster1.png">')
+            $('.slick-dots li').eq(1).html('<img src="./poster2.png">')
+            $('.slick-dots li').eq(2).html('<img src="./poster3.png">')
+        });
+    </script>
+</body>
+
+</html>
